@@ -14,10 +14,10 @@ module.exports = function (grunt) {
 
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
-    useminPrepare: 'grunt-usemin',
-    ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn',
-    buildcontrol: 'grunt-builf-control'
+      useminPrepare: 'grunt-usemin',
+      ngtemplates: 'grunt-angular-templates',
+      cdnify: 'grunt-google-cdn',
+      buildcontrol: 'grunt-build-control'
   });
 
   // Configurable paths for the application
@@ -39,7 +39,7 @@ module.exports = function (grunt) {
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
-      pages:{
+      pages: {
         options: {
           remote: 'git@github.com:Cass0115/Final-Project-WATS4000.git',
           branch: 'gh-pages'
