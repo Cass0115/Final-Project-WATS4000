@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         }
       }
     },
-  
+
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -83,6 +83,7 @@ module.exports = function (grunt) {
         ]
       }
     },
+
 
     // The actual grunt server settings
     connect: {
