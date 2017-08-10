@@ -16,6 +16,7 @@ angular.module('finalProjectWats4000App')
   });
 
 
+
 //Save City function
 $scope.saveCity = function(city){
     var cityData = {
