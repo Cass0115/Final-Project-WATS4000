@@ -14,7 +14,7 @@ angular.module('finalProjectWats4000App')
 
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/find?q=:query&type=like&mode=json&APPID=7e735b71cd3e8a09c532b5d37f161482', {}, {
+    return $resource('http://api.openweathermap.org/data/2.5/find?q=:query&type=like&mode=json&units=imperial&APPID=7e735b71cd3e8a09c532b5d37f161482', {}, {
       find: {
         method: 'GET',
         params: {
