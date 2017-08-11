@@ -7,7 +7,7 @@
  * # flickr
  * Factory in the finalProjectWats4000App.
  */
-angular.module('finalProjectWats4000App')
+//angular.module('finalProjectWats4000App')
   .factory('flickr', function ($resource) {
     // Service logic
     // ...
@@ -17,7 +17,7 @@ angular.module('finalProjectWats4000App')
     query: {
       method:'GET',
       params:{
-        citySearch: 'Seattle' 
+        citySearch: 'Seattle'
       },
       isArray:false
     }
