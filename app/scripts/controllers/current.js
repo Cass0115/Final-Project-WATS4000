@@ -23,7 +23,7 @@ $scope.saveCity = function(city){
         'name': city.name,
         'id': city.id
     };
-    if ($localStorage.savedCities){
+    if (!$localStorage.savedCities){
         $localStorage.savedCities = [cityData];
     } else {
         // We have already saved some cities.
