@@ -15,6 +15,12 @@ angular.module('finalProjectWats4000App')
       cityID: $routeParams.cityID
   });
 
+//  $scope.current.$promise.then(function(weatherData){
+    //call Flickr API
+    // lat and long are inside weatherData
+
+//  });
+
 
 
 //Save City function
