@@ -32,7 +32,6 @@ $scope.saveCity = function(city){
     if (!$localStorage.savedCities){
         $localStorage.savedCities = [cityData];
     } else {
-        // We have already saved some cities.
         // Check to make sure we haven't already saved the current city.
         var save = true; // Initialize the save decision variable.
         // Use this loop to check if we've already saved the city.
