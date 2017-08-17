@@ -17,7 +17,7 @@ angular.module('finalProjectWats4000App')
     query: {
       method:'GET',
         params:{
-        tags: 'weather,city'
+         tags: 'weather,city'
       },
       isArray:false
     }

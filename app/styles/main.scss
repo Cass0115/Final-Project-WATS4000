@@ -3,8 +3,16 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 //@import "content";
-//@import "buttons";
+@import "buttons";
 @import "transitions";
+
+.jumbotron h1{
+  font-size:35px;
+  line-height: 48px;
+}
+
+
+
 
 .header{
   background: black;

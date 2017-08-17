@@ -1,5 +1,5 @@
 <h1>Current Weather for {{currentWeather.name}}</h1>
-<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>
+
 <div ng-messages="citySaved">
     <p class="city-saved-alert bg-success text-success" ng-message="success">
         {{currentWeather.name}} has been saved to your list of cities.
@@ -19,5 +19,5 @@
     <dt>Clouds</dt>
     <dd>{{currentWeather.clouds.all}}%</dd>
 </dl>
-
-<p><a ng-href="#!/forecast/{{cityID}}" class="btn btn-lg btn-primary animated rotateIn">View 5-day Forecast</a></p>
+<p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>
+<p><a ng-href="#!/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 5-day Forecast</a></p>
