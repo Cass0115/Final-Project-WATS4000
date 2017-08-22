@@ -1,4 +1,4 @@
-<h1>Current Weather for {{currentWeather.name}}</h1>
+<h1>{{currentWeather.name}} Weather</h1>
 
 <div ng-messages="citySaved">
     <p class="city-saved-alert bg-success text-success" ng-message="success">
@@ -10,11 +10,12 @@
 </div>
 
   <div class ="current-weather">
-    <p class="current-temp">Temperature</p>
-    <p>{{currentWeather.main.temp}} &deg;F</p>
-    <p>Clouds are {{currentWeather.clouds.all}}%</p>
-    <p>High {{currentWeather.main.temp_max}}</p>
-    <p>Low {{currentWeather.main.temp_min}}</p>
+    <h2 class="current-temp">Temperature</h2>
+    <p class="current-temp1">{{currentWeather.main.temp}} &deg;F</p>
+    <p class="current-temp1">Clouds coverage{{currentWeather.clouds.all}}%</p>
+    <p class="current-temp1">Humidity {{currentWeather.main.humidity}}%</p>
+    <p class="current-temp1">High {{currentWeather.main.temp_max}}</p>
+    <p class="current-temp1">Low {{currentWeather.main.temp_min}}</p>
   </div>
 
 <p ng-if="!citySaved"><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>

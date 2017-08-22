@@ -8,19 +8,19 @@
  * Controller of the finalProjectWats4000App
  */
 angular.module('finalProjectWats4000App')
-.controller('CurrentCtrl', function ($scope, $routeParams, current, $localStorage, flickr) {
+.controller('CurrentCtrl', function ($scope, $routeParams, current, $localStorage) {
   $scope.cityID = $routeParams.cityID;
 
   $scope.currentWeather = current.query({
       cityID: $routeParams.cityID
   });
 
- $scope.currentWeather.$promise.then(function(weatherData){
+// $scope.currentWeather.$promise.then(function(weatherData){
     //call Flickr API
-    $scope.flickr=flickr.query({
-      tags: weatherData.name + weatherData.weather[3].main
-    });
- });
+//    $scope.flickr=flickr.query({
+//      tags: weatherData.name + weatherData.weather[0].main
+//    });
+// });
 
 
 
