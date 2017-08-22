@@ -15,12 +15,7 @@ angular.module('finalProjectWats4000App')
       cityID: $routeParams.cityID
   });
 
-// $scope.currentWeather.$promise.then(function(weatherData){
-    //call Flickr API
-//    $scope.flickr=flickr.query({
-//      tags: weatherData.name + weatherData.weather[0].main
-//    });
-// });
+
 
 
 

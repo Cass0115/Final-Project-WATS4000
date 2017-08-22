@@ -1,3 +1,5 @@
+
+//Current styles
 .current-weather{
   padding-top:3rem;
 }
@@ -6,4 +8,19 @@ p.current-temp{
 }
 p.current-temp1{
   font-size: 20px;
+}
+
+
+//Forecast styles
+h1.forecast-h1{
+  text-align: center;
+}
+.weather-forecast{
+  float:left;
+  padding-left:48px;
+
+}
+.forcast-buttons{
+  clear:both;
+  padding-top:3rem;
 }

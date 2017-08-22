@@ -9,16 +9,25 @@
  */
 
 angular.module('finalProjectWats4000App')
-  .controller('ForecastCtrl', function ($scope, $routeParams, forecast) {
+  .controller('ForecastCtrl', function ($scope, $routeParams, forecast, flickr) {
     $scope.cityID = $routeParams.cityID;
 
     $scope.forecastData = forecast.query({
         cityID: $routeParams.cityID
     });
 
-//  $scope.current.$promise.then(function(weatherData){
-//     $scope.flickr = flickr.query({
-//       tags: weatherData.list[0].weather.description
-//       });
-//     });
+  $scope.forecastData.$promise.then(function(weatherData){
+      //call Flickr API
+     $scope.flickr = flickr.query({
+       tags: weatherData.list[0].weather.description
+       });
+     });
   });
+
+
+  // $scope.currentWeather.$promise.then(function(weatherData){
+      //call Flickr API
+  //    $scope.flickr=flickr.query({
+  //      tags: weatherData.name + weatherData.weather[0].main
+  //    });
+  // });  weatherData.list[0].weather.description
