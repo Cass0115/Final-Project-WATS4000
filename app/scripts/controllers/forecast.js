@@ -7,12 +7,18 @@
  * # ForecastCtrl
  * Controller of the finalProjectWats4000App
  */
- 
+
 angular.module('finalProjectWats4000App')
-  .controller('ForecastCtrl', function ($scope, $routeParams, forecast) {
+  .controller('ForecastCtrl', function ($scope, $routeParams, forecast, flickr) {
     $scope.cityID = $routeParams.cityID;
 
     $scope.forecastData = forecast.query({
         cityID: $routeParams.cityID
     });
+
+  $scope.current.$promise.then(function(weatherData){
+     $scope.flickr = flickr.query({
+       tags: weatherData.list[3].weather.description
+       });
+     });
   });

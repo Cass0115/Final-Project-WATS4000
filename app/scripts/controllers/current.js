@@ -18,9 +18,8 @@ angular.module('finalProjectWats4000App')
  $scope.currentWeather.$promise.then(function(weatherData){
     //call Flickr API
     $scope.flickr=flickr.query({
-      tags: weatherData.name + "," + weatherData.weather[0].main
-    })
-
+      tags: weatherData.name + weatherData.weather[3].main
+    });
  });
 
 
