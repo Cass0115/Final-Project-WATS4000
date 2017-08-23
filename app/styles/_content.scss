@@ -1,4 +1,7 @@
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
 //Current styles
 .current-weather{
   padding-top:3rem;
@@ -16,9 +19,11 @@ h1.forecast-h1{
   text-align: center;
 }
 .weather-forecast{
+  padding: 30px 40px 30px 40px;
   float:left;
-  padding-left:48px;
-
+  border: 2px solid black;
+  height: 400px;
+  width: 500px;
 }
 .forcast-buttons{
   clear:both;
