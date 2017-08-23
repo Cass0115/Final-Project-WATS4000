@@ -1,13 +1,15 @@
 
 
 
-<h1 class="forecast-h1">5-day Forecast for {{forecastData.city.name}}</h1>
+<h1 class="forecast-h1">10-day Forecast for {{forecastData.city.name}}</h1>
 
 <div ng-repeat="prediction in forecastData.list" class="weather-forecast">
-    <h2>{{prediction.dt*1000 | date:'MMM dd, yyyy'}}</h2>
-    <p>{{prediction.weather[0].description}}</p>
-    <h3>Temperature</h3>
-    <p>Min: {{prediction.temp.min}} &deg;F Max: {{prediction.temp.max}} &deg;F</p>
+    <h2 class="prediction-header">{{prediction.dt*1000 | date:'MMM dd, yyyy'}}</h2>
+    <h3 class="prediction-header">Weather</h3>
+    <p class="prediction-paragraph">{{prediction.weather[0].description}}</p>
+    <h3 class="prediction-header">Temperature</h3>
+    <p class="prediction-paragraph">High {{prediction.temp.max}} &deg;F</p>
+    <p class="prediction-paragraph">Low {{prediction.temp.min}} &deg;F</p>    
 </div>
 
 

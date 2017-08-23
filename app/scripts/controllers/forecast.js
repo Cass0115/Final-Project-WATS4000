@@ -16,10 +16,12 @@ angular.module('finalProjectWats4000App')
         cityID: $routeParams.cityID
     });
 
-  $scope.forecastData.$promise.then(function(weatherData){
+  $scope.forecastData.$promise.then(function(data){
       //call Flickr API
      $scope.flickr = flickr.query({
-       tags: weatherData.list[0].weather.description
+       lat: data.city.coord.lat,
+       lon: data.city.coord.lon,
+       tags: data.list[3].weather.description
        });
      });
   });

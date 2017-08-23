@@ -7,9 +7,9 @@
  * # MainCtrl
  * Controller of the finalProjectWats4000App
  */
- 
+
 angular.module('finalProjectWats4000App')
-  .controller('MainCtrl', function ($scope, citysearch, $localStorage) {
+  .controller('MainCtrl', function($scope, citysearch, $localStorage) {
     $scope.citiesFound = citysearch.find();
     $scope.storage = $localStorage;
 
@@ -19,5 +19,4 @@ angular.module('finalProjectWats4000App')
         });
         $scope.searchQuery = $scope.location;
     };
-
   });

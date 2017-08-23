@@ -13,6 +13,7 @@ angular.module('finalProjectWats4000App')
 
   $scope.currentWeather = current.query({
       cityID: $routeParams.cityID
+
   });
 
 
@@ -23,8 +24,11 @@ angular.module('finalProjectWats4000App')
 $scope.saveCity = function(city){
     var cityData = {
         'name': city.name,
-        'id': city.id
+        'id': city.id,
+        'lat': city.lat,
+        'lon': city.lon
     };
+    
     if (!$localStorage.savedCities){
         $localStorage.savedCities = [cityData];
     } else {
