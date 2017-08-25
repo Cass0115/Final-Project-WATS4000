@@ -28,7 +28,7 @@ $scope.saveCity = function(city){
         'lat': city.lat,
         'lon': city.lon
     };
-    
+
     if (!$localStorage.savedCities){
         $localStorage.savedCities = [cityData];
     } else {

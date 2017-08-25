@@ -19,17 +19,16 @@ angular.module('finalProjectWats4000App')
   $scope.forecastData.$promise.then(function(data){
       //call Flickr API
      $scope.flickr = flickr.query({
-       lat: data.city.coord.lat,
-       lon: data.city.coord.lon,
        tags: data.list[3].weather.description
        });
      });
   });
 
 
+
   // $scope.currentWeather.$promise.then(function(weatherData){
       //call Flickr API
   //    $scope.flickr=flickr.query({
-  //      tags: weatherData.name + weatherData.weather[0].main
+  //      tags: weatherData.name + " , " weatherData.weather[0].main
   //    });
   // });  weatherData.list[0].weather.description

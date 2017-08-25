@@ -3,6 +3,7 @@
 
 
   <div class ="current-weather">
+    <div class="weather-icon"><img ng-src="http://openweathermap.org/img/w/{{currentWeather.weather[0].icon}}.png" alt="weather-icon" style="width:120px;height:120px;margin-left:20px;"></div>
     <h2 class="current-temp">Temperature</h2>
     <p class="current-temp1">{{currentWeather.main.temp}} &deg;F</p>
     <p class="current-temp1">Clouds coverage{{currentWeather.clouds.all}}%</p>
@@ -21,4 +22,4 @@
     </p>
 </div>
 
-<p><a ng-href="#!/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 5-day Forecast</a></p>
+<p><a ng-href="#!/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 10-day Forecast</a></p>
