@@ -1,36 +1,36 @@
-
-
 <h1 class="forecast-h1">10-day Forecast for {{forecastData.city.name}}</h1>
 
+
+
+
+<!-- 
+ <div class="photos" ng-repeat="photo in flickrPhotos.photos.photo">
+      <img ng-src="{{photo.url_m}}">
+    </div> -->
+
+
 <div ng-repeat="prediction in forecastData.list" class="weather-forecast">
-
-<!--  <div ng-repeat="flickr">{{json | flickr}}</div>
-
- -->
+<!--
+    <div ng-repeat="flickr">{{json | flickr}}</div> -->
 
 
-    <div ng-if="flickr.photos.photo.length>1" class="flickr-container">
-      <div ng-controller="ForecastCtrl">
-        <div class="photos" ng-repeat="photo in pics.photos.photo">
-          <p ng-repeat="Photos in flickr.photos.photo | limitTo:5"></p>
-          <img ng-src="{{photo.url_m}}">
-        </div>
-      </div>
-    </div>
 
-    <div class="weather-icon"><img ng-src="http://openweathermap.org/img/w/{{prediction.weather[0].icon}}.png" alt="weather-icon"  style="width: 120px;
+
+
+
+  <div class="weather-icon"><img ng-src="http://openweathermap.org/img/w/{{prediction.weather[0].icon}}.png" alt="weather-icon" style="width: 120px;
       height: 120px;"></div>
-    <h2 class="prediction-header">{{prediction.dt*1000 | date:'MMM dd, yyyy'}}</h2>
-    <h3 class="prediction-header">Weather</h3>
-    <p class="prediction-paragraph">{{prediction.weather[0].description}}</p>
-    <h3 class="prediction-header">Temperature</h3>
-    <p class="prediction-paragraph">High {{prediction.temp.max}} &deg;F</p>
-    <p class="prediction-paragraph">Low {{prediction.temp.min}} &deg;F</p>
+  <h2 class="prediction-header">{{prediction.dt*1000 | date:'MMM dd, yyyy'}}</h2>
+  <h3 class="prediction-header">Weather</h3>
+  <p class="prediction-paragraph">{{prediction.weather[0].description}}</p>
+  <h3 class="prediction-header">Temperature</h3>
+  <p class="prediction-paragraph">High {{prediction.temp.max}} &deg;F</p>
+  <p class="prediction-paragraph">Low {{prediction.temp.min}} &deg;F</p>
 
 </div>
 
 
 <div class="forcast-buttons">
-<p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
-<p id="general-btn"><a ng-href="#!/" class="btn btn-md btn-primary">Find Another City</a></p>
+  <p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
+  <p id="general-btn"><a ng-href="#!/" class="btn btn-md btn-primary">Find Another City</a></p>
 </div>

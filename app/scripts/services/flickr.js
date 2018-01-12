@@ -13,7 +13,7 @@ angular.module('finalProjectWats4000App')
     // ...
 
     // Public API here
-    return $resource ('https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&tags=:tags&format=json&api_key=b523d26cf6c2a4fbb1e109f3708f8628&extras=url_m&lat=:lat&lon=:lon',{},{
+    return $resource ('https://api.flickr.com/services/rest/?method=flickr.photos.search&tags=:tags&format=json&api_key=b523d26cf6c2a4fbb1e109f3708f8628&extras=url_m&lat=:lat&lon=:lon&nojsoncallback=1',{},{
     query: {
       method:'GET',
         params:{
