@@ -1,21 +1,14 @@
-<h1 class="forecast-h1">10-day Forecast for {{forecastData.city.name}}</h1>
-
-
-
+<h1 class="forecast-h1">10-day Forecast for {{forecastData.city.name}}, {{forecastData.state.name}}</h1>
 
 <!-- 
  <div class="photos" ng-repeat="photo in flickrPhotos.photos.photo">
       <img ng-src="{{photo.url_m}}">
     </div> -->
 
-
+<section class="wrapper-forecast">
 <div ng-repeat="prediction in forecastData.list" class="weather-forecast">
 <!--
     <div ng-repeat="flickr">{{json | flickr}}</div> -->
-
-
-
-
 
 
   <div class="weather-icon"><img ng-src="http://openweathermap.org/img/w/{{prediction.weather[0].icon}}.png" alt="weather-icon" style="width: 120px;
@@ -28,7 +21,7 @@
   <p class="prediction-paragraph">Low {{prediction.temp.min}} &deg;F</p>
 
 </div>
-
+</section>
 
 <div class="forcast-buttons">
   <p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
