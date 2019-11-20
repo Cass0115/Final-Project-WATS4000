@@ -16,9 +16,7 @@ p.current-temp{
 p.current-temp1{
   font-size: 20px;
 }
-h1.forecast-h1{
-  text-align: center;
-}
+
 .current-weather{
   padding: 30px 40px 30px 40px;
   display: inline-block;
@@ -48,9 +46,9 @@ h1.forecast-h1{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.weather-forecast{
+.weather-forecast {
   padding: 30px 40px 30px 40px;
-  width: 30%;
+  width: 25%;
   border: 2px solid #decaba;
   border-radius: 10px;
   margin: 0 32px 32px 0;
@@ -67,7 +65,7 @@ h1.forecast-h1{
 
 
 //Weather-icons
-.weather-icon{
-  width: 100px;
-  height: 100px;
+.weather-icon img{
+  width: 75px;
+  height: 75px;
 }
