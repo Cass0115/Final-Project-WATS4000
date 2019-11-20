@@ -16,15 +16,13 @@ p.current-temp{
 p.current-temp1{
   font-size: 20px;
 }
-h1.forecast-h1{
-  text-align: center;
-}
+
 .current-weather{
   padding: 30px 40px 30px 40px;
   display: inline-block;
   border: 2px solid #decaba;
   border-radius: 10px;
-  margin: 32px;
+  margin: 0 32px 32px 0;
   background: #6991c7;
   background: -webkit-linear-gradient(left top, #bfd1f2,  #6991c7);
   background: -o-linear-gradient(bottom right, #bfd1f2,  #6991c7); /* For Opera 11.1 to 12.0 */
@@ -43,12 +41,17 @@ p:first-of-type{
 h1.forecast-h1{
   text-align: center;
 }
-.weather-forecast{
+.wrapper-forecast {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.weather-forecast {
   padding: 30px 40px 30px 40px;
-  display: inline-block;
+  width: 25%;
   border: 2px solid #decaba;
   border-radius: 10px;
-  margin: 32px;
+  margin: 0 32px 32px 0;
   background: #bfd1f2;
   background: -webkit-linear-gradient(left top, #bfd1f2,  #6991c7);
   background: -o-linear-gradient(bottom right, #bfd1f2,  #6991c7); /* For Opera 11.1 to 12.0 */
@@ -62,7 +65,7 @@ h1.forecast-h1{
 
 
 //Weather-icons
-.weather-icon{
-  width: 100px;
-  height: 100px;
+.weather-icon img{
+  width: 75px;
+  height: 75px;
 }

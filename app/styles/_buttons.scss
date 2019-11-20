@@ -1,32 +1,33 @@
-button.btn.btn-lg.btn-primary{
-    background-color: black;
-    border: none;
-    border-radius:10px;
-}
-
-a.btn.btn-lg.btn-primary.ng-binding{
+button.btn.btn-lg.btn-primary {
   background-color: black;
   border: none;
-  border-radius:10px;
+  border-radius:5px;
+}
+
+a.btn.btn-lg.btn-primary.ng-binding {
+  background-color: black;
+  border: none;
+  border-radius:5px;
   margin-bottom: 32px;
 }
 
-a.btn.btn-lg.btn-primary{
+a.btn.btn-lg.btn-primary {
   background-color: black;
   border: none;
-  border-radius:10px;
+  border-radius:5px;
 }
-ul.saved-cities-list{
+ul.saved-cities-list {
   list-style-type: none;
+  padding: 0;
 }
-button.btn.btn-sm.btn-primary{
+button.btn.btn-sm.btn-primary {
   background-color: black;
   border: none;
-  border-radius:10px;
+  border-radius:5px;
 }
 
-a.btn.btn-md.btn-primary{
+a.btn.btn-md.btn-primary {
   background-color: black;
   border: none;
-  border-radius:10px;
+  border-radius:5px;
 }

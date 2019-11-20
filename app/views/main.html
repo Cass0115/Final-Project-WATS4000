@@ -1,7 +1,7 @@
-<div ng-app class="jumbotron" ng-controller="MainCtrl">
+<div ng-app ng-controller="MainCtrl">
 
-  <!-- Will this work? -->
-  <h1>View Upcoming Weather with <br>Flickr Photos</br></h1>
+
+  <h1>View Today's Weather</h1>
   <p class="lead">
     <div ng-init="location='Seattle'">
         <p>
@@ -14,7 +14,7 @@
         </p>
     </div>
     <div ng-if="searchQuery">
-      <p class="lead">{{citiesFound.count}} cities found matching the query: {{searchQuery}}.</p>
+      <p class="lead">{{citiesFound.count}} cities found matching the search: {{searchQuery}}.</p>
       <dl ng-repeat="city in citiesFound.list">
         <dt>{{city.name}}, {{city.sys.country}}</dt>
         <dd>{{city.weather[0].main}} - {{city.weather[0].description}}</dd>

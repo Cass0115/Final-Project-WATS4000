@@ -1,12 +1,12 @@
-<h1>{{currentWeather.name}} Weather</h1>
+<h1> Current weather in {{currentWeather.name}}</h1>
 
 
 
   <div class ="current-weather">
-    <div class="weather-icon"><img ng-src="http://openweathermap.org/img/w/{{currentWeather.weather[0].icon}}.png" alt="weather-icon" style="width:120px;height:120px;margin-left:20px;"></div>
+    <div class="weather-icon"><img ng-src="http://openweathermap.org/img/w/{{currentWeather.weather[0].icon}}.png" alt="weather-icon"></div>
     <h2 class="current-temp">Temperature</h2>
     <p class="current-temp1">{{currentWeather.main.temp}} &deg;F</p>
-    <p class="current-temp1">Clouds coverage{{currentWeather.clouds.all}}%</p>
+    <p class="current-temp1">Clouds coverage {{currentWeather.clouds.all}}%</p>
     <p class="current-temp1">Humidity {{currentWeather.main.humidity}}%</p>
     <p class="current-temp1">High {{currentWeather.main.temp_max}}</p>
     <p class="current-temp1">Low {{currentWeather.main.temp_min}}</p>
