@@ -44,6 +44,7 @@
     "test": "karma start test/karma.conf.js"
   },
   "dependencies": {
-    "google-cdn": "^1.1.0"
+    "google-cdn": "^1.1.0",
+    "lodash": "^4.17.15"
   }
 }
